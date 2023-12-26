@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e6eff5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem 0 rgba(0, 81, 171, 0.15);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.4rem;
+}
+
+.card-title {
+  background-color: #ffffff;
+  padding: 4rem;
+
+  grid-column: 1 / -1;
+}
+
+.card-title h1 {
+  font-family: "Karla";
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2ab3b1;
+  margin-bottom: 2.4rem;
+}
+
+.card-title h2 {
+  font-family: "Karla";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c0df33;
+  margin-bottom: 1.1rem;
+}
+
+.card-title p {
+  font-family: "Karla";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #9aa7be;
+  max-width: 55.5rem;
+}
+
+.card-price {
+  background-color: #2ab3b1;
+  padding: 4rem;
+}
+
+.card-price h2 {
+  font-family: "Karla";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+}
+
+.card-price .value {
+  font-family: "Karla";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #94d9d7;
+  margin-bottom: 0.4rem;
+}
+
+.card-price .value strong {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  color: #ffffff;
+  margin-right: 1.1rem;
+}
+
+.card-price p {
+  font-family: "Karla";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #ffffff;
+  margin-bottom: 2.6rem;
+}
+
+.card-price .btn {
+  font-family: "Karla";
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: #c0df33;
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-why {
+  background-color: #4bbfbc;
+  padding: 4rem;
+}
+
+.card-why h2 {
+  font-family: "Karla";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+}
+
+.card-why p {
+  font-family: "Karla";
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: -0.017rem;
+  color: #b0e3e1;
+}
+
+@media screen and (max-width: 60rem) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    padding: 2.8rem 2.4rem 3.2rem 2.4rem;
+  }
+
+  .card-title h1 {
+    font-size: 2rem;
+  }
+
+  .card-title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    letter-spacing: -0.019rem;
+  }
+
+  .card-title p {
+    font-size: 1.4rem;
+    letter-spacing: -0.017rem;
+    max-width: 26.3rem;
+  }
+
+  .card-price {
+    padding: 2.4rem;
+  }
+
+  .card-price h2 {
+    letter-spacing: -0.022rem;
+  }
+
+  .card-why {
+    padding: 2.4rem;
+  }
+}
